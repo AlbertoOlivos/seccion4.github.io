@@ -10,16 +10,22 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Cubo Rojo en A-Frame</title>
+    <title>Modelo 3D en A-Frame</title>
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 </head>
 <body>
     <a-scene>
-        <!-- Cubo rojo -->
-        <a-box position="0 1 -3" color="red"></a-box>
+        <!-- Carga el modelo GLB -->
+        <a-entity 
+            gltf-model="objetos/estudio.glb" 
+            position="0 0 -3" 
+            scale="1 1 1">
+        </a-entity>
 
         <!-- Cámara con controles -->
-        <a-camera></a-camera>
+        <a-camera position="0 1.6 0">
+            <a-cursor></a-cursor>
+        </a-camera>
     </a-scene>
 </body>
 </html>
