@@ -33,7 +33,7 @@
         <!-- Contenedor de modelos 3D -->
         <a-entity id="contenedor-modelos">
             <!-- Aquí se carga el modelo 3D "estudio.glb" desde la carpeta "objetos" -->
-            <a-entity gltf-model="objetos/estudio.glb" position="0 0 -5" scale="1 1 1"></a-entity>
+            <a-entity gltf-model="https://raw.githubusercontent.com/usuario/repositorio/branch/objetos/estudio.glb" position="0 0 -5" scale="1 1 1"></a-entity>
         </a-entity>
     </a-scene>
 
@@ -46,7 +46,7 @@
 
             if (ambiente === "secc1") {
                 fondo.setAttribute("src", "imagenes/ambiente1.jpg");
-                contenedor.innerHTML = '<a-entity gltf-model="objetos/estudio.glb" position="0 0 -5" scale="1 1 1"></a-entity>';
+                contenedor.innerHTML = '<a-entity gltf-model="https://raw.githubusercontent.com/usuario/repositorio/branch/objetos/estudio.glb" position="0 0 -5" scale="1 1 1"></a-entity>';
             }
         }
     </script>
